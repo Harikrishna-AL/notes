@@ -2,8 +2,8 @@ baseURL = 'https://harikrishna-al.github.io/notes/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'sk3'
-contentdir: content
-layoutdir: layouts
-builddrafts: True
-canonifyurls: False
-publishDir: docs
+contentdir = content
+layoutdir = layouts
+builddrafts = True
+canonifyurls = False
+publishDir = docs
