@@ -1,6 +1,7 @@
 ---
 title: "Diffusion"
 date: 2023-02-21T22:39:12+05:30
+toc: true
 draft: true
 ---
 

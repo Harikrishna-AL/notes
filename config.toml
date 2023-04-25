@@ -1,9 +1,25 @@
 baseURL = 'https://harikrishna-al.github.io/notes/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'sk3'
+title = 'Notes'
+theme = 'm10c'
 contentdir = "content"
 layoutdir = "layouts"
 builddrafts = "True"
 canonifyurls = "False"
 publishDir = "docs"
+
+[params]
+  author = "@harikrishna-al"
+  description = "This is what I try to learn."
+  avatar = "https://avatars.githubusercontent.com/u/91690484?v=4"
+  
+
+  [[params.social]]
+    icon = "github"
+    name = "GitHub"
+    url = "https://github.com/Harikrishna-AL"
+
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/HarikrishnaPi10"

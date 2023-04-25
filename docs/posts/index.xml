@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Notes</title>
     <link>https://harikrishna-al.github.io/notes/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Feb 2023 22:45:25 +0530</lastBuildDate><atom:link href="https://harikrishna-al.github.io/notes/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Apr 2023 22:39:12 +0530</lastBuildDate><atom:link href="https://harikrishna-al.github.io/notes/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Fuzzy_c</title>
-      <link>https://harikrishna-al.github.io/notes/posts/fuzzy_c/</link>
-      <pubDate>Tue, 21 Feb 2023 22:45:25 +0530</pubDate>
+      <title>NeRF (Neural Radience Fields)</title>
+      <link>https://harikrishna-al.github.io/notes/posts/nerf/</link>
+      <pubDate>Sun, 23 Apr 2023 22:39:12 +0530</pubDate>
       
-      <guid>https://harikrishna-al.github.io/notes/posts/fuzzy_c/</guid>
-      <description>Fuzzy C Fuzzy C is a model which sofly classifies data points into clusters, which means that a single datapoint can belong to multiple clusters according to it&amp;rsquo;s probability of being in those classes.
-Model data flow Flowchart Membership value Here Mu represents the membership value. Mu(ij) means that membership value of i(th) point in the k(th) cluster. This value is calculated for each data points in every interation and stored in a matrix.</description>
+      <guid>https://harikrishna-al.github.io/notes/posts/nerf/</guid>
+      <description>NeRF (Neural Radience Fields) what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset. Archeitecture </description>
+    </item>
+    
+    <item>
+      <title>NeRF</title>
+      <link>https://harikrishna-al.github.io/notes/posts/nerf_model/</link>
+      <pubDate>Sun, 23 Apr 2023 21:57:32 +0530</pubDate>
+      
+      <guid>https://harikrishna-al.github.io/notes/posts/nerf_model/</guid>
+      <description>
+what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset.
+Archeitecture </description>
     </item>
     
     <item>
