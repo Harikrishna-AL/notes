@@ -13,14 +13,14 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="NeRF"/>
-<meta name="twitter:description" content="
-what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset.
-Archeitecture "/>
+<meta name="twitter:description" content="what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset. The model takes a 5D(3d coordinates,camera angles) input and then outputs a 4D(rgb color, densoty) vector.
+Sampling Inputs The 3 dimensinal coordinates that has to be passed into the neural network is sampled using a ray casting algorithm. The algorithm is as follows:
+Cast a ray from a pixel of the image to the object."/>
 
     <meta property="og:title" content="NeRF" />
-<meta property="og:description" content="
-what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset.
-Archeitecture " />
+<meta property="og:description" content="what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset. The model takes a 5D(3d coordinates,camera angles) input and then outputs a 4D(rgb color, densoty) vector.
+Sampling Inputs The 3 dimensinal coordinates that has to be passed into the neural network is sampled using a ray casting algorithm. The algorithm is as follows:
+Cast a ray from a pixel of the image to the object." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://harikrishna-al.github.io/notes/posts/nerf_model/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-04-23T21:57:32+05:30" />
@@ -74,16 +74,32 @@ Archeitecture " />
       </div>
     </header>
     <div class="post-content">
-      <p><img src="nerf.jpeg" alt="Image alt"></p>
-<ul>
+      <ul>
 <li>
 <h2 id="_what-are-nerfs_"><em><strong>what are NeRFs?</strong></em></h2>
-<p>NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset.</p>
+<p>NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset. The model takes a 5D(3d coordinates,camera angles) input and then outputs a 4D(rgb color, densoty) vector.</p>
 <!-- raw HTML omitted -->
 </li>
 <li>
+<h2 id="_sampling-inputs_"><em><strong>Sampling Inputs</strong></em></h2>
+<p>The 3 dimensinal coordinates that has to be passed into the neural network is sampled using a ray casting algorithm. The algorithm is as follows:</p>
+<ol>
+<li>Cast a ray from a pixel of the image to the object.</li>
+<li>Sample points along the ray.</li>
+<li>Pass the sampled points to the network.
+<img src="ray_cast.png" alt="Image alt"></li>
+</ol>
+</li>
+<li>
 <h2 id="_archeitecture_"><em><strong>Archeitecture</strong></em></h2>
-<hr>
+<!-- raw HTML omitted -->
+<figure class="center"><img src="nerf.jpeg"
+             alt="asdfghjk"/><figcaption>
+                <h4>NeRF</h4><p>asdfghjk</p>
+            </figcaption>
+    </figure>
+
+<p>The network is a fully connected network with 8 layers. The input to the network is a 5D vector and the output is a 4D vector. The network is trained using a loss function which is the sum of the MSE of the rgb color and the density. The network is trained using the Adam optimizer.</p>
 </li>
 </ul>
 

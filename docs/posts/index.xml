@@ -22,9 +22,9 @@
       <pubDate>Sun, 23 Apr 2023 21:57:32 +0530</pubDate>
       
       <guid>https://harikrishna-al.github.io/notes/posts/nerf_model/</guid>
-      <description>
-what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset.
-Archeitecture </description>
+      <description>what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset. The model takes a 5D(3d coordinates,camera angles) input and then outputs a 4D(rgb color, densoty) vector.
+Sampling Inputs The 3 dimensinal coordinates that has to be passed into the neural network is sampled using a ray casting algorithm. The algorithm is as follows:
+Cast a ray from a pixel of the image to the object.</description>
     </item>
     
     <item>
