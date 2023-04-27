@@ -1,7 +1,7 @@
 baseURL = 'https://harikrishna-al.github.io/notes/'
 languageCode = 'en-us'
 title = 'Notes'
-theme = 'm10c'
+theme = 'paper'
 contentdir = "content"
 layoutdir = "layouts"
 builddrafts = "True"

@@ -31,21 +31,35 @@ draft: true
             (y - height*0.5)/focal_length,
             torch.ones_like(x)]
         )
-        origins = torch.broadcast_to(
+        ray_o = torch.broadcast_to(
             cam2world[:3,-1],
             directions.shape
         )
-        rays_d = torch.sum(
+        ray_dir = torch.sum(
             directions[...,None,:] * cam2world[:3,:3],
             dim=-1
         )
-        rays_o = torch.sum(
-            origins[...,None,:] * cam2world[:3,:3],
-            dim=-1
-        )
-        return rays_o,rays_d
+        return rays_o,ray_dir   
     ```
-    
+    This function returns all the points on the image and it's direction vector. The points are then sampled using the following function:
+    ```
+    def compute_query_points(
+        ray_directions,
+        ray_origins,
+        near,
+        far,
+        num_samples,
+        random=True):
+        depth_values = torch.linspace(near,far,num_samples).to(ray_origins)
+        if random:
+            shape = list(depth_values.shpae[:,-1]) + [num_samples]
+            depth_values = depth_values \
+             + torch.rand(shape).to(ray_origins) * (far - near)/num_samples
+        query_points = ray_origins[...,None,:] \
+         + ray_directions[...,None,:]*depth_values[...,None,:]
+         
+        return query_points, depth_values 
+    ```
 - ## _**Archeitecture**_
     <!-- making image centered -->
     <!-- <div style="align:center"><img src="./nerf.jpeg" alt="no image"></div> -->
@@ -53,3 +67,5 @@ draft: true
     <!-- {{< figure src="nerf.jpeg" title="NeRF" caption="asdfghjk" class="center" >}} -->
 
     The network is a fully connected network with 8 layers. The input to the network is a 5D vector and the output is a 4D vector. The network is trained using a loss function which is the sum of the MSE of the rgb color and the density. The network is trained using the Adam optimizer. 
+
+- ## 
