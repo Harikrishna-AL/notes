@@ -118,7 +118,7 @@ Cast a ray from a pixel of the image to the object." />
 Sampling Inputs The 3 dimensinal coordinates that has to be passed into the neural network is sampled using a ray casting algorithm. The algorithm is as follows:
 Cast a ray from a pixel of the image to the object."><meta itemprop="datePublished" content="2023-04-23T21:57:32+05:30" />
 <meta itemprop="dateModified" content="2023-04-23T21:57:32+05:30" />
-<meta itemprop="wordCount" content="237">
+<meta itemprop="wordCount" content="287">
 <meta itemprop="keywords" content="" />
   
   <meta name="twitter:card" content="summary"/>
@@ -264,12 +264,21 @@ Cast a ray from a pixel of the image to the object."/>
     )
     return rays_o,ray_dir   
 </code></pre><p>This function returns all the points on the image and it&rsquo;s direction vector. The points are then sampled using the following function:</p>
-<pre tabindex="0"><code>def compute_query_points(ray_directions,ray_origins,near far,num_samples,random=True):
+<pre tabindex="0"><code>def compute_query_points(
+    ray_directions,
+    ray_origins,
+    near,
+    far,
+    num_samples,
+    random=True):
     depth_values = torch.linspace(near,far,num_samples).to(ray_origins)
     if random:
         shape = list(depth_values.shpae[:,-1]) + [num_samples]
-        depth_values = depth_values + torch.rand(shape).to(ray_origins) * (far - near)/num_samples
-    query_points = ray_origins[...,None,:] + ray_directions[...,None,:]*depth_values[...,None,:]
+        depth_values = depth_values \
+         + torch.rand(shape).to(ray_origins) * (far - near)/num_samples
+    query_points = ray_origins[...,None,:] \
+     + ray_directions[...,None,:]*depth_values[...,None,:]
+
     return query_points, depth_values 
 </code></pre></li>
 <li>
@@ -279,9 +288,23 @@ Cast a ray from a pixel of the image to the object."/>
 <p><img src="nerf.jpeg" alt="Image alt"></p>
 <!-- raw HTML omitted -->
 <p>The network is a fully connected network with 8 layers. The input to the network is a 5D vector and the output is a 4D vector. The network is trained using a loss function which is the sum of the MSE of the rgb color and the density. The network is trained using the Adam optimizer.</p>
-</li>
+<p>The PyTorch model looks like follows:</p>
+<pre tabindex="0"><code>class NeRF(nn.Module):
+    def __init__(self,out_channel=128,num_encoding_functions=6):
+        super(NeRF,self).__init__()
+        self.layer1 = nn.Linear(3 + 3*2*num_encoding_functions,out_channel)
+        self.layer2 = nn.Linear(out_channel,out_channel)
+        self.layer3 = nn.Linear(out_channel,4)
+        self.relu = nn.ReLU()
+
+    def forward(self,x):
+        x = self.relu(self.layer1(x))
+        x = self.relu(self.layer2(x))
+        out = self.layer3(x)
+        return out
+</code></pre></li>
 <li>
-<h2 id="heading"></h2>
+<h2 id="training-and-renderng-the-output">Training and renderng the output</h2>
 </li>
 </ul>
 </section>
