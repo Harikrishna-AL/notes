@@ -87,3 +87,4 @@ draft: true
 
 - ## Training and renderng the output
 
+    One importatnt thing to notice here is that we have to positional encode the input features to a higher frequency because ML models typically are good at learning higher frequency features. 
