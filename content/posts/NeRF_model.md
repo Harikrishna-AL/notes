@@ -20,7 +20,7 @@ draft: true
     ![Image alt](ray_cast.png)
     
     Code:
-    ```
+    ```python
     def compute_rays(height,width,focal_length,cam2world):
         x ,y = tor_to_meshgrid(
             torch.arrange(width).to(cam2world),
@@ -42,7 +42,7 @@ draft: true
         return rays_o,ray_dir   
     ```
     This function returns all the points on the image and it's direction vector. The points are then sampled using the following function:
-    ```
+    ```python
     def compute_query_points(
         ray_directions,
         ray_origins,
@@ -69,7 +69,7 @@ draft: true
     The network is a fully connected network with 8 layers. The input to the network is a 5D vector and the output is a 4D vector. The network is trained using a loss function which is the sum of the MSE of the rgb color and the density. The network is trained using the Adam optimizer. 
 
     The PyTorch model looks like follows:
-    ```
+    ```python
     class NeRF(nn.Module):
         def __init__(self,out_channel=128,num_encoding_functions=6):
             super(NeRF,self).__init__()
