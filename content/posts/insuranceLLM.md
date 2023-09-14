@@ -18,6 +18,8 @@ The initial and straight forward approch that came to our minds was that we trai
     But there is an obvious flaw in this method. ICD codes have their subcodes too and their descriptions are too similar due to which the similarity scores can be too similar. Thus, even if the parent code can be identified but this fails to work to distinguish between sub ICD codes.
 
     ![Image alt](vector_output.png)
+
+    Here is an example where the model finds out ICD code for 'Intestinal amebiasis'. This method doesn't always work though since bioBERT can't detect all the necessary biological entities.
   
 - **An ICD fine-tuned model with Attention Manipulation**
   
