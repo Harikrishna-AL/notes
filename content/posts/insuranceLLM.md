@@ -6,7 +6,7 @@ draft: true
 
 The goal of this project is to make a NLP model that can understand a doctor's clinical report and ouput the relevant ICD (Internationl Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.
 ## Initial Thoughts
-The initial and straight forward approch that came to our minds was that we train fine tune a pre trained model to do Multi-Class Classification of the ICD codes provided we have a dataset with doctor's clinical report and the coressponding ICD codes. Unfortunately, We were not provided with such a dataset. So we brainstormed a lot and came up with 2 solutions. The major issue we thought we might face is that LLMs are not trustable. 
+The initial and straight forward approch that came to our minds was that we fine tune a pre trained model to do Multi-Class Classification of the ICD codes provided we have a dataset with doctor's clinical report and the coressponding ICD codes. Unfortunately, We were not provided with such a dataset. So we brainstormed a lot and came up with 2 solutions. The major issue we thought we might face is that LLMs are not trustable. 
 - **NER with calculating vector scores**
   
     This implementation focused on
