@@ -1,3 +1,11 @@
+---
+title: "insuranceLLM (LLM to generate ICD codes from clinical reports)"
+date: 2023-09-14T16:05:31+05:30
+draft: true
+---
+
+
+
 # insuranceLLM (under construction 🚧)
 The goal of this project is to make a NLP model that can understand a doctor's clinical report and ouput the relevant ICD (Internationl Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.
 ## Initial Thoughts
