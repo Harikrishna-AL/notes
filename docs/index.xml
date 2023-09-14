@@ -6,14 +6,23 @@
     <description>Recent content on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Sep 2023 16:05:31 +0530</lastBuildDate><atom:link href="https://harikrishna-al.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Sep 2023 23:21:14 +0530</lastBuildDate><atom:link href="https://harikrishna-al.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cellular_automata</title>
+      <link>https://harikrishna-al.github.io/notes/posts/cellular_automata/</link>
+      <pubDate>Thu, 14 Sep 2023 23:21:14 +0530</pubDate>
+      
+      <guid>https://harikrishna-al.github.io/notes/posts/cellular_automata/</guid>
+      <description>What are Cellular Automata? Cellular Automata are a type of model where certain cells are represented as grids and each cell has a state. The state of these cells are time variant. The current state of a cell will be a function of the states of it&amp;rsquo;s neighbouring cell&amp;rsquo;s states. This function can also be defined as a set of rules instead. In the early model, the states of the cells were binary (0 or 1) but now they can be any value between them.</description>
+    </item>
+    
     <item>
       <title>insuranceLLM (LLM to generate ICD codes from clinical reports)</title>
       <link>https://harikrishna-al.github.io/notes/posts/insurancellm/</link>
       <pubDate>Thu, 14 Sep 2023 16:05:31 +0530</pubDate>
       
       <guid>https://harikrishna-al.github.io/notes/posts/insurancellm/</guid>
-      <description>insuranceLLM (under construction 🚧) The goal of this project is to make a NLP model that can understand a doctor&amp;rsquo;s clinical report and ouput the relevant ICD (Internationl Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.
+      <description>The goal of this project is to make a NLP model that can understand a doctor&amp;rsquo;s clinical report and ouput the relevant ICD (Internationl Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.
 Initial Thoughts The initial and straight forward approch that came to our minds was that we train fine tune a pre trained model to do Multi-Class Classification of the ICD codes provided we have a dataset with doctor&amp;rsquo;s clinical report and the coressponding ICD codes.</description>
     </item>
     
