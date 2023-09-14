@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Apr 2023 22:39:12 +0530</lastBuildDate><atom:link href="https://harikrishna-al.github.io/notes/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Sep 2023 16:05:31 +0530</lastBuildDate><atom:link href="https://harikrishna-al.github.io/notes/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>insuranceLLM (LLM to generate ICD codes from clinical reports)</title>
+      <link>https://harikrishna-al.github.io/notes/posts/insurancellm/</link>
+      <pubDate>Thu, 14 Sep 2023 16:05:31 +0530</pubDate>
+      
+      <guid>https://harikrishna-al.github.io/notes/posts/insurancellm/</guid>
+      <description>insuranceLLM (under construction 🚧) The goal of this project is to make a NLP model that can understand a doctor&amp;rsquo;s clinical report and ouput the relevant ICD (Internationl Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.
+Initial Thoughts The initial and straight forward approch that came to our minds was that we train fine tune a pre trained model to do Multi-Class Classification of the ICD codes provided we have a dataset with doctor&amp;rsquo;s clinical report and the coressponding ICD codes.</description>
+    </item>
+    
     <item>
       <title>NeRF (Neural Radience Fields)</title>
       <link>https://harikrishna-al.github.io/notes/posts/nerf/</link>
@@ -34,16 +44,6 @@ Cast a ray from a pixel of the image to the object.</description>
       
       <guid>https://harikrishna-al.github.io/notes/posts/diffusion/</guid>
       <description>Denoising Diffusion Probablistic Models This note is about the diffusion model. It will cover about it&amp;rsquo;s working and implementation both mathematically and code wise. Diffusion is one of the latest techniques used to generate new images by basically destroy them by adding more and more noise. So a basic diffusion model will contain a noise scheduler, a neural network to predict the noise in an image at given timestamp (t) (U-Net is this case) and a loss function which enables the model to learn from dataset.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://harikrishna-al.github.io/notes/posts/insurancellm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://harikrishna-al.github.io/notes/posts/insurancellm/</guid>
-      <description>insuranceLLM (under construction 🚧) The goal of this project is to make a NLP model that can understand a doctor&amp;rsquo;s clinical report and ouput the relevant ICD (Internationl Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.
-Initial Thoughts The initial and straight forward approch that came to our minds was that we train fine tune a pre trained model to do Multi-Class Classification of the ICD codes provided we have a dataset with doctor&amp;rsquo;s clinical report and the coressponding ICD codes.</description>
     </item>
     
   </channel>

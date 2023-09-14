@@ -19,6 +19,8 @@ The initial and straight forward approch that came to our minds was that we trai
     - The ICD code coressponding to the highest code will be given as the output.
 
     But there is an obvious flaw in this method. ICD codes have their subcodes too and their descriptions are too similar due to which the similarity scores can be too similar. Thus, even if the parent code can be identified but this fails to work to distinguish between sub ICD codes.
+
+    ![Image alt](vector_output.png)
   
 - **An ICD fine-tuned model with Attention Manipulation**
   
