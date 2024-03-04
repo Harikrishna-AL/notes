@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes</title>
-    <link>http://localhost:1313/notes/</link>
+    <link>https://harikrishna-al.github.io/notes/</link>
     <description>Recent content on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Mar 2024 18:10:09 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://harikrishna-al.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NDP</title>
-      <link>http://localhost:1313/notes/posts/ndp/</link>
+      <link>https://harikrishna-al.github.io/notes/posts/ndp/</link>
       <pubDate>Mon, 04 Mar 2024 18:10:09 +0530</pubDate>
-      <guid>http://localhost:1313/notes/posts/ndp/</guid>
+      <guid>https://harikrishna-al.github.io/notes/posts/ndp/</guid>
       <description>Neural Developmental Program Summary NDP</description>
     </item>
     <item>
       <title>Cellular_automata</title>
-      <link>http://localhost:1313/notes/posts/cellular_automata/</link>
+      <link>https://harikrishna-al.github.io/notes/posts/cellular_automata/</link>
       <pubDate>Thu, 14 Sep 2023 23:21:14 +0530</pubDate>
-      <guid>http://localhost:1313/notes/posts/cellular_automata/</guid>
+      <guid>https://harikrishna-al.github.io/notes/posts/cellular_automata/</guid>
       <description>What are Cellular Automata? Cellular Automata are a type of model where certain cells are represented as grids and each cell has a state. The state of these cells are time variant. The current state of a cell will be a function of the states of it&amp;rsquo;s neighbouring cell&amp;rsquo;s states. This function can also be defined as a set of rules instead. In the early model, the states of the cells were binary (0 or 1) but now they can be any value between them.</description>
     </item>
     <item>
       <title>insuranceLLM (LLM to generate ICD codes from clinical reports)</title>
-      <link>http://localhost:1313/notes/posts/insurancellm/</link>
+      <link>https://harikrishna-al.github.io/notes/posts/insurancellm/</link>
       <pubDate>Thu, 14 Sep 2023 16:05:31 +0530</pubDate>
-      <guid>http://localhost:1313/notes/posts/insurancellm/</guid>
+      <guid>https://harikrishna-al.github.io/notes/posts/insurancellm/</guid>
       <description>The goal of this project is to make a NLP model that can understand a doctor&amp;rsquo;s clinical report and ouput the relevant ICD (Internationl Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.&#xA;Initial Thoughts The initial and straight forward approch that came to our minds was that we fine tune a pre trained model to do Multi-Class Classification of the ICD codes provided we have a dataset with doctor&amp;rsquo;s clinical report and the coressponding ICD codes.</description>
     </item>
     <item>
       <title>NeRF (Neural Radience Fields)</title>
-      <link>http://localhost:1313/notes/posts/nerf/</link>
+      <link>https://harikrishna-al.github.io/notes/posts/nerf/</link>
       <pubDate>Sun, 23 Apr 2023 22:39:12 +0530</pubDate>
-      <guid>http://localhost:1313/notes/posts/nerf/</guid>
+      <guid>https://harikrishna-al.github.io/notes/posts/nerf/</guid>
       <description>NeRF (Neural Radience Fields) what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset. Archeitecture </description>
     </item>
     <item>
       <title>NeRF</title>
-      <link>http://localhost:1313/notes/posts/nerf_model/</link>
+      <link>https://harikrishna-al.github.io/notes/posts/nerf_model/</link>
       <pubDate>Sun, 23 Apr 2023 21:57:32 +0530</pubDate>
-      <guid>http://localhost:1313/notes/posts/nerf_model/</guid>
+      <guid>https://harikrishna-al.github.io/notes/posts/nerf_model/</guid>
       <description>what are NeRFs? NeRFs are a type of network used to generate unseen views of an object using the seen views as the dataset. The model takes a 5D(3d coordinates,camera angles) input and then outputs a 4D(rgb color, densoty) vector.&#xA;Sampling Inputs The 3 dimensinal coordinates that has to be passed into the neural network is sampled using a ray casting algorithm. The algorithm is as follows:&#xA;Cast a ray from a pixel of the image to the object.</description>
     </item>
     <item>
       <title>Diffusion</title>
-      <link>http://localhost:1313/notes/posts/diffusion/</link>
+      <link>https://harikrishna-al.github.io/notes/posts/diffusion/</link>
       <pubDate>Tue, 21 Feb 2023 22:39:12 +0530</pubDate>
-      <guid>http://localhost:1313/notes/posts/diffusion/</guid>
+      <guid>https://harikrishna-al.github.io/notes/posts/diffusion/</guid>
       <description>Denoising Diffusion Probablistic Models This note is about the diffusion model. It will cover about it&amp;rsquo;s working and implementation both mathematically and code wise. Diffusion is one of the latest techniques used to generate new images by basically destroy them by adding more and more noise. So a basic diffusion model will contain a noise scheduler, a neural network to predict the noise in an image at given timestamp (t) (U-Net is this case) and a loss function which enables the model to learn from dataset.</description>
     </item>
   </channel>
