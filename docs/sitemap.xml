@@ -2,29 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://harikrishna-al.github.io/notes/posts/cellular_automata/</loc>
+    <loc>http://localhost:1313/notes/posts/ndp/</loc>
+    <lastmod>2024-03-04T18:10:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/</loc>
+    <lastmod>2024-03-04T18:10:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/posts/</loc>
+    <lastmod>2024-03-04T18:10:09+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/notes/posts/cellular_automata/</loc>
     <lastmod>2023-09-14T23:21:14+05:30</lastmod>
   </url><url>
-    <loc>https://harikrishna-al.github.io/notes/</loc>
-    <lastmod>2023-09-14T23:21:14+05:30</lastmod>
-  </url><url>
-    <loc>https://harikrishna-al.github.io/notes/posts/</loc>
-    <lastmod>2023-09-14T23:21:14+05:30</lastmod>
-  </url><url>
-    <loc>https://harikrishna-al.github.io/notes/posts/insurancellm/</loc>
+    <loc>http://localhost:1313/notes/posts/insurancellm/</loc>
     <lastmod>2023-09-14T16:05:31+05:30</lastmod>
   </url><url>
-    <loc>https://harikrishna-al.github.io/notes/posts/nerf/</loc>
+    <loc>http://localhost:1313/notes/posts/nerf/</loc>
     <lastmod>2023-04-23T22:39:12+05:30</lastmod>
   </url><url>
-    <loc>https://harikrishna-al.github.io/notes/posts/nerf_model/</loc>
+    <loc>http://localhost:1313/notes/posts/nerf_model/</loc>
     <lastmod>2023-04-23T21:57:32+05:30</lastmod>
   </url><url>
-    <loc>https://harikrishna-al.github.io/notes/posts/diffusion/</loc>
+    <loc>http://localhost:1313/notes/posts/diffusion/</loc>
     <lastmod>2023-02-21T22:39:12+05:30</lastmod>
   </url><url>
-    <loc>https://harikrishna-al.github.io/notes/categories/</loc>
+    <loc>http://localhost:1313/notes/categories/</loc>
   </url><url>
-    <loc>https://harikrishna-al.github.io/notes/tags/</loc>
+    <loc>http://localhost:1313/notes/tags/</loc>
   </url>
 </urlset>
