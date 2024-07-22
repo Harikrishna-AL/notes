@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://harikrishna-al.github.io/notes/posts/ndp/</loc>
-    <lastmod>2024-03-04T18:10:09+05:30</lastmod>
-  </url><url>
     <loc>https://harikrishna-al.github.io/notes/</loc>
-    <lastmod>2024-03-04T18:10:09+05:30</lastmod>
+    <lastmod>2024-06-02T17:38:03+05:30</lastmod>
   </url><url>
     <loc>https://harikrishna-al.github.io/notes/posts/</loc>
+    <lastmod>2024-06-02T17:38:03+05:30</lastmod>
+  </url><url>
+    <loc>https://harikrishna-al.github.io/notes/posts/exploring_neuroscience/</loc>
+    <lastmod>2024-06-02T17:38:03+05:30</lastmod>
+  </url><url>
+    <loc>https://harikrishna-al.github.io/notes/posts/ndp/</loc>
     <lastmod>2024-03-04T18:10:09+05:30</lastmod>
   </url><url>
     <loc>https://harikrishna-al.github.io/notes/posts/cellular_automata/</loc>

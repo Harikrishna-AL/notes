@@ -4,10 +4,17 @@
     <title>Notes</title>
     <link>https://harikrishna-al.github.io/notes/</link>
     <description>Recent content on Notes</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Mar 2024 18:10:09 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jun 2024 17:38:03 +0530</lastBuildDate>
     <atom:link href="https://harikrishna-al.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taking Inspiration from Brain 🧠</title>
+      <link>https://harikrishna-al.github.io/notes/posts/exploring_neuroscience/</link>
+      <pubDate>Sun, 02 Jun 2024 17:38:03 +0530</pubDate>
+      <guid>https://harikrishna-al.github.io/notes/posts/exploring_neuroscience/</guid>
+      <description>Taking Inspiration from brain 🧠 This note in short explains the different processes learning may take place in the brain. What I want is to inpisre some of these phenomenons in the field of AI and create some interesting neural neteorwks.&#xA;why do we need to understand this? I personally believe that the most of the world and major startups are stuck in the same loop of trainig LLMs while it is quite evident that it&amp;rsquo;s a dead end.</description>
+    </item>
     <item>
       <title>NDP</title>
       <link>https://harikrishna-al.github.io/notes/posts/ndp/</link>
