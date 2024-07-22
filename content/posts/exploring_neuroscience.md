@@ -3,8 +3,6 @@ title: "Taking Inspiration from Brain 🧠"
 date: 2024-06-02T17:38:03+05:30
 draft: true
 ---
-
-# Taking Inspiration from brain 🧠
 This note in short explains the different processes learning may take place in the brain. What I want is to inpisre some of these phenomenons in the field of AI and create some interesting neural neteorwks.
 
 ## why do we need to understand this?
