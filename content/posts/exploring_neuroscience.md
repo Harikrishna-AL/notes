@@ -25,5 +25,6 @@ The idea here is that certain rules can be defined which neurons can either be a
 
 - **Long Range Connections**: The brain is capable of making long-range connections between neurons. In the implementations I saw of growing networks, the connections were updated through GraphConv layers which only took the neighbouring nodes into consideration. Therefore, I tried using **Edge-Augmented Attention** to update the node embeddings and edges based on the values of all the nodes in the graph. This way, the network can make long-range connections between neurons. Unfortunately, I couldn't get the results as growing the graph beyond fewer neurons throwed error. This was because I had used PCA to reduce dimensionaliy of the edge matrix but it gave error for larger matrices. Here is an example of the growing network I tried to create by taking inspiration from the NDP paper.
 
-![Image alt](array2.gif)
+    ![Image alt](array2.gif)
+
 
