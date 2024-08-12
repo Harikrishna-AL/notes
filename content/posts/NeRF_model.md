@@ -85,9 +85,9 @@ draft: true
             return out
     ```
 
-- ## Training and renderng the output
+- ## Training and rendering the output
 
-    One importatnt thing to notice here is that we have to positional encode the input features to a higher frequency because ML models typically are good at learning higher frequency features. 
+    One important thing to notice here is that we have to positional encode the input features to a higher frequency because ML models typically are good at learning higher frequency features. 
 
     ### Embryo training dataset
     ![Image alt](embryo_nerf_dataset.png)

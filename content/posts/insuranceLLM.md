@@ -4,15 +4,15 @@ date: 2023-09-14T16:05:31+05:30
 draft: true
 ---
 
-The goal of this project is to make a NLP model that can understand a doctor's clinical report and ouput the relevant ICD (Internationl Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.
+The goal of this project is to make a NLP model that can understand a doctor's clinical report and ouput the relevant ICD (International Disease Classification) codes. These codes are then used by the insurance company to give the insurance money.
 ## Initial Thoughts
-The initial and straight forward approch that came to our minds was that we fine tune a pre trained model to do Multi-Class Classification of the ICD codes provided we have a dataset with doctor's clinical report and the coressponding ICD codes. Unfortunately, We were not provided with such a dataset. So we brainstormed a lot and came up with 2 solutions. The major issue we thought we might face is that LLMs are not trustable. 
+The initial and straight forward approach that came to our minds was that we fine tune a pre trained model to do Multi-Class Classification of the ICD codes provided we have a dataset with doctor's clinical report and the corresponding ICD codes. Unfortunately, We were not provided with such a dataset. So we brainstormed a lot and came up with 2 solutions. The major issue we thought we might face is that LLMs are not trustable. 
 - **NER with calculating vector scores**
   
     This implementation focused on
     - Identifying biological entities from a clinical report using bioBERT.
     - Converting them to vectors using bioBERT embeddings.
-    - Calculate the similarity score of these words with the ICD data that we already extracted ( contains ICD codes and their coresspondng description ).
+    - Calculate the similarity score of these words with the ICD data that we already extracted ( contains ICD codes and their correspondng description ).
     - The ICD code coressponding to the highest code will be given as the output.
 
     But there is an obvious flaw in this method. ICD codes have their subcodes too and their descriptions are too similar due to which the similarity scores can be too similar. Thus, even if the parent code can be identified but this fails to work to distinguish between sub ICD codes.
@@ -30,7 +30,7 @@ The initial and straight forward approch that came to our minds was that we fine
     - Next, we have to teach the models about the ICD codes. For that we again fine-tuned them using the ICD tabular PDF file.
       - Right now we are at this stage, We are still not sure if this is the way. :)
     - Recognize biological entities form the clinical report using bioBERT.
-    - Then, we use Attention Manipulation to amplify the attention scores of the indentified words. This ensures that the model focuses on the right words and we get a higher chance of getting the right output.
+    - Then, we use Attention Manipulation to amplify the attention scores of the identified words. This ensures that the model focuses on the right words and we get a higher chance of getting the right output.
 
     Here is an glimpse of how we fine-tune the model
     ```python
@@ -52,7 +52,7 @@ The initial and straight forward approch that came to our minds was that we fine
 
     def model_to_lora(model, config):
         """
-        A function to convert the model to Lora. This function adds the Lora layer to the model. (new paremeters)
+        A function to convert the model to Lora. This function adds the Lora layer to the model. (new parameters)
 
         model: model to convert
         config: LoraConfig
@@ -71,7 +71,7 @@ The initial and straight forward approch that came to our minds was that we fine
 
     def train(model, dataset, epochs, lr):
         """
-        A function to train the model using the trainer funciton.
+        A function to train the model using the trainer function.
 
         model: model to train
         dataset: dataset to use
